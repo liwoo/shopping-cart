@@ -80,6 +80,11 @@ button.accept-policy {
   color: white;
 }
 
+.clear-cart {
+  border: none;
+  padding: 0.5rem;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
