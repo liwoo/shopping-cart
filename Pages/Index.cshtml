@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="cart-container">
+        <div class="cart-image">
+            <img src="https://images.unsplash.com/photo-1564020426549-fabfb8c467ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
+                alt="bear-oil">
+        </div>
+        <div class="cart-details">
+            <h2>MK5,000</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor ratione culpa! Deleniti vel
+                quidem officia unde. Temporibus neque, quae nesciunt in natus delectus repellendus odio perspiciatis
+                enim,
+                aut libero.</p>
+            <button onclick="addToCart('beardOil', 5000);" class="cart-button">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToCart(name, price) {
+        alert(`adding to cart: ${name}`);
+        const cartSummaryElement = document.getElementById("cart-summary");
+        cartSummaryElement.innerText = "1 Item in Cart"
+    }
+</script>
